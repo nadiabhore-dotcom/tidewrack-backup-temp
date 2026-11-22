@@ -93,6 +93,9 @@ python3 tests/validate_dialogue.py
 
 # In-engine checks (requires Godot on PATH)
 godot --headless --path . --check-only   # parse all scripts
+
+# Verify keyboard/controller bindings, player movement, and movement lock
+godot --headless --path . --script tests/validate_input.gd
 ```
 
 > The GDScript in this build was authored without a local Godot install, so it
